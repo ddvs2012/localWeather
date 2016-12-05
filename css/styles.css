@@ -1,0 +1,27 @@
+body{
+	background-color:#E0BABA !important;
+}
+
+header{
+	text-align:center;
+	font-family: bungee;
+	font-size: 40px;
+	font-weight: 500;
+	margin: 15 0 0 0;
+}
+
+#subHeader{
+	text-align:center;
+	font-family: raleway !important;
+	font-size: 20px;
+	font-weight: 100;
+	margin: 0 0 0 0;
+}
+
+
+
+
+.info{
+	text-align:center;
+	font-size:30px;
+}
