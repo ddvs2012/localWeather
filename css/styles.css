@@ -1,5 +1,7 @@
 body{
 	background-color:#E0BABA !important;
+	background-size: 2000px;
+
 }
 
 header{
@@ -18,10 +20,22 @@ header{
 	margin: 0 0 0 0;
 }
 
+#location{
+	font-family:raleway;
+	font-size:50px;
+	border-style: double ;
+	border-radius: 5px;
+	display: block;
 
+	
+}
 
 
 .info{
 	text-align:center;
 	font-size:30px;
+}
+
+#temp-container{
+	font-size:120px;
 }
