@@ -29,9 +29,15 @@ header{
 	
 }
 #icon{
-	font-size:25px;
+	font-size:65px;
 	text-align: center;
 }
+.locInput{
+	text-align:center;
+	display:inline;
+	
+}
+
 
 .info{
 	text-align:center;
@@ -39,6 +45,7 @@ header{
 }
 
 #temp-container{
+	
 	font-size:90px;
 }
 
