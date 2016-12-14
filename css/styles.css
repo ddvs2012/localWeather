@@ -1,7 +1,6 @@
 body{
-	background-color:#E0BABA !important;
+	background-color:#3D487F !important;
 	background-size: 2000px;
-
 }
 
 header{
@@ -23,13 +22,16 @@ header{
 #location{
 	font-family:raleway;
 	font-size:50px;
-	border-style: double ;
-	border-radius: 5px;
+	/*border-style: double ;
+	border-radius: 5px;*/
 	display: block;
 
 	
 }
-
+#icon{
+	font-size:25px;
+	text-align: center;
+}
 
 .info{
 	text-align:center;
@@ -37,5 +39,20 @@ header{
 }
 
 #temp-container{
-	font-size:120px;
+	font-size:90px;
+}
+
+#time{
+	text-align: center;
+}
+
+#author{
+	text-align:center;
+	
+}
+
+.type{
+	font-family:sans-serif;
+	font-size:.75em;
+	color: #FFFFFF
 }

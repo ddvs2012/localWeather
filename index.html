@@ -3,7 +3,12 @@
 	<title>Local Weather App</title>
 	
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link rel="stylesheet" type="text/css" href="css/weather-icons.css">
+	<link rel="stylesheet" type="text/css" href="css/weather-icons.css">	
+	<link rel="stylesheet" type="text/css" href="css/owfont-regular.css">
+	<link rel="stylesheet" type="text/css" href="css/owfont-regular.min.css">
+	
+	<script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.js" async></script>
+	
 	<link href="https://fonts.googleapis.com/css?family=Bungee|Raleway|Contrail+One" rel="stylesheet"> 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,42 +16,29 @@
 			  src="https://code.jquery.com/jquery-2.2.4.min.js"
 			  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
 			  crossorigin="anonymous"></script>
-	<script type='text/javascript' src="script.js" async ></script>
+	<script type='text/javascript' src="scripts/script.js" async ></script>
+	
 </head>
 
 <body>
 	
 		<header>Danny's Weather App</header>
 		<div id="subHeader">So you don't have to look out the window</div>
-		<br><br><br>
+		<br><br>
 		<div id="location" class="info"> <!--Location here--> --</div> </div>
-		
-		<div class="info" id="weatherDescription">
-			<i class="fa fa-spin fa-snowflake-o"></i>
-			<i class="fa fa-spin fa-sun-o"></i>
-			<i class="fa fa-bolt"></i>
-			<i class="fa fa-tint"></i>
-			<i class="fa fa-thermometer-0"></i>
-			<i class="fa fa-thermometer-1"></i>
-			<i class="fa fa-thermometer-2"></i>
-			<i class="fa fa-thermometer-3"></i>
-			<i class="fa fa-thermometer-4"></i>
-			<i class="wi wi-night-sleet"></i>
-		</div>
-		
-		<div id="time">
-		<!--sunrise/set time-->
-			
-		</div>
-	
-		
+		<div id="icon"><!-- icon here --></div>
+		<div class="info" id="weatherDescription"><!--description here--></div>		
 		<div class="info" id="temp-container"> <!--Temp here --> --</div>
 		<div class="info"> 
-		<p>
-			<button class="btn btn-info" id="fButton">F</button>
-			<button class="btn btn-info" id="cButton">C</button>
-		 </p>
+			<p>
+				<button class="btn btn-info" id="fButton">F</button>
+				<button class="btn btn-info" id="cButton">C</button>
+			 </p>
 		 </div>
+		 <div id="time"><!--sunrise/set time--></div>
+		 
+		 <footer id="author">by <a href="http://dannysview.com">Danny</a></footer>
+		
 		 
 		 
 </body>
