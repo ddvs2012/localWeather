@@ -27,9 +27,7 @@ $(document).ready(function(){
 				weatherDescription = data.weather[0].main;
 				$('#weatherDescription').html("<span class='type'>Condition: </span>"+weatherDescription);
 				
-				if(weatherDescription === "Mist"){
-					$('body').css('background-image', 'url(https://static.pexels.com/photos/132983/pexels-photo-132983.jpeg)');
-				}	
+				
 				
 				backgroundImgContainer = {
 					thunderStormD : "http://i.imgur.com/d8i9wi6.jpg",
@@ -44,33 +42,24 @@ $(document).ready(function(){
 				backgroundImg = ''
 				
 				
-				switch(icon){
-					case icon <299:
-						backgroundImg = backgroundImgContainer["thunderStormD"];
-						break;
-					case icon >= 300 && icon <=399 :
-						backgroundImg = backgroundImgContainer["drizzleD"];
-						break;
-					case icon >= 500 && icon <=599:
-						backgroundImg = backgroundImgContainer["rainD"];
-						break;
-					case icon >= 600 && icon <=699:
-						backgroundImg = backgroundImgContainer["snowD"];
-						break;
-					case icon >= 700 && icon <=799:
-						backgroundImg = backgroundImgContainer["atmosphereD"];
-						break;
-					case icon = 800:
-						backgroundImg = backgroundImgContainer["clearD"];
-						break;
-					case icon >= 801 && icon <=804:
-						backgroundImg = backgroundImgContainer["cloudsD"];
-						break;
-					case icon >= 805 && icon <=999:
-						backgroundImg = backgroundImgContainer["extremeD"];
-						break;
-					default: console.log("oops");
+				if(icon < 299){
+					backgroundImg = backgroundImgContainer["thunderStormD"];
+				} else if (icon >= 300 && icon <=399){
+					backgroundImg = backgroundImgContainer["drizzleD"];
+				}else if (icon >= 500 && icon <=599){
+					backgroundImg = backgroundImgContainer["rainD"];
+				}else if (icon >= 600 && icon <=699){
+					backgroundImg = backgroundImgContainer["snowD"];
+				}else if (icon >= 700 && icon <=799){
+					backgroundImg = backgroundImgContainer["atmosphereD"];
+				}else if (icon = 800){
+					backgroundImg = backgroundImgContainer["clearD"];
+				}else if (icon >= 801 && icon <=804){
+					backgroundImg = backgroundImgContainer["cloudsD"];
+				}else if (icon >= 805 && icon <=999){
+					backgroundImg = backgroundImgContainer["extremeD"];
 				}
+					
 				$('body').css('background-image', 'url('+backgroundImg);
 				
 //Sunrise and set time NEEDS WORK

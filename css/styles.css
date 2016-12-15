@@ -1,7 +1,10 @@
+
+
 body{
 	background-color:#3D487F !important;
-	background-size: 2000px;
+	background-size: no-repeat cover;
 }
+
 
 header{
 	text-align:center;
