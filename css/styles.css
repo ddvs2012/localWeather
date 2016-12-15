@@ -2,7 +2,8 @@
 
 body{
 	background-color:#3D487F !important;
-	background-size: no-repeat cover;
+	background-size:cover;
+	background-repeat:no repeat;
 }
 
 
