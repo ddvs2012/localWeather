@@ -1,5 +1,8 @@
 <html>
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
 	<title>Local Weather App</title>
 	
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -14,7 +17,7 @@
 
 
 	
-	<script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.js" ></script>
+	
 	
 	<link href="https://fonts.googleapis.com/css?family=Bungee|Raleway|Contrail+One" rel="stylesheet"> 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -31,17 +34,14 @@
 		<header>Danny's Weather App</header>
 		<div id="subHeader">So you don't have to look out the window</div><br>
 		
-		<!--  User Input Location Here .. NOT WORKING
-		<div class"container>
-			<div class="row">
-				<div class="col-lg-4 col-lg-4-offset col-md-4 col-md-4-offset">
-					<form class='locInput'>
-						<input class ="form-control" id="desLocation" placeholder="Enter City/Zipcode"></input>
-						<button class="btn btn-info" onclick="outPut()">Submit</button>
-					</form>
-				</div>
+<!-- 		Location input -->
+			<div id="center">
+				<form id="searchForm" class="form-inline">
+					<input id="searchInput" class="input-group form-control" placeholder="Enter City/Zipcode" type="text"></input>
+					<button id="searchBtn" class="btn btn-info " type="text">Search</button>
+				</form>
 			</div>
-		</div> -->
+		
 		
 		<div id="location" class="info"> <!--Location here--> --</div> </div>
 		<div id="icon"><!-- icon here --></div>

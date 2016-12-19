@@ -1,8 +1,12 @@
-
+@media only screen and (max-width: 768px) {
+	#searchBtn{
+		width : 100%;
+	}
+}
 /* needs important? */
 body{
 	background-color:#3D487F !important;
-	background-size:cover;
+	background-size:100% ;
 	background-repeat:no-repeat;
 }
 
@@ -22,6 +26,9 @@ header{
 	font-weight: 100;
 	margin: 0 0 0 0;
 }
+#center{
+	text-align:center;
+}
 
 #location{
 	font-family:raleway;
@@ -36,11 +43,7 @@ header{
 	font-size:65px;
 	text-align: center;
 }
-.locInput{
-	text-align:center;
-	display:inline;
-	
-}
+
 #time{
 	color: #FFF;
 }
