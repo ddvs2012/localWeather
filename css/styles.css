@@ -3,11 +3,35 @@
 		width : 100%;
 	}
 }
+html{
+	background:no-repeat center center-fixed;
+	background-size: cover;
+}
 /* needs important? */
 body{
-	background-color:#3D487F !important;
-	background-size:100% ;
-	background-repeat:no-repeat;
+/*	color:#FFF !important;*/
+	background-color: rgba(0,0,0,0) !important;
+	
+}
+#color{
+	margin:10px auto;
+    background-color: rgba(0, 0, 0, 0.8);
+	color :#108FA5;
+	max-width:50%;
+}
+.innerWell{
+	margin-top:5px;
+	max-width:50%;
+	min-width: 45%;
+	background-color: rgba(76, 100, 186, 0.1) !important;
+	display: inline-block;
+	visibility:hidden;
+}
+.boxes{
+	margin-top:5px;
+	max-width:20%;
+	background-color: rgba(76, 100, 186, 0.1) !important;
+	display: inline ;
 }
 
 
@@ -47,20 +71,30 @@ header{
 #time{
 	color: #FFF;
 }
-
+.deg{
+	font-size: .5em;
+}
 
 .info{
 	text-align:center;
 	font-size:30px;
 }
-
+#high, #low{
+	display: inline;
+	font-size:20px;
+}
 #temp-container{
-	
-	font-size:90px;
+	width: 50% !important;
+	display: inline;
+	font-size:60px;
+	margin:0 10;
 }
 
 #time{
 	text-align: center;
+}
+#location{
+	font-size: 2em;
 }
 
 #author{
@@ -70,9 +104,4 @@ header{
 /* needs important? */
 a{
 	color:#B2E3F4 !important; 
-}
-.type{
-	font-family:sans-serif;
-	font-size:.75em;
-	color: #FFFFFF
 }

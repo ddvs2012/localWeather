@@ -1,43 +1,18 @@
 $(document).ready(function(){
-
 		function initTemp(K){
 					kTemp = K;
 					fTemp = Math.round(kTemp * (9/5) - 459.67);
-					return fTemp;
 					cTemp = ((fTemp - 32) * (5/9));
 		}
 		function getForecast(data){
-			high = initTemp(data.list[0].temp.max);			 
-			low = initTemp(data.list[0].temp.min);
-			
-			$('#high').html('Hi '+high +'<span class="deg"> &deg;F </span>');
-			$('#low').html('Lo ' +low +'<span class="deg"> &deg;F </span>');
-		}
-		//Temperature Buttons
-		$('#cButton').click(function(){
-			function convertF(temperature){
-				return (temperature - 32) * (5/9);
-			}
-			currentTemp = convertF(currentTemp);
-				$('#temp-container').html(Math.round(currentTemp) + '<span class="deg"> &deg;C </span>');
-			high = convertF(high);
-				$('#high').html(Math.round(high) + '<span class="deg"> &deg;C </span>');
-			low = convertF(low);
-				$('#low').html(Math.round(low) + '<span class="deg"> &deg;C </span>');
-			
+			initTemp(data.list[0].temp.max);
+			var high = fTemp; 
+			initTemp(data.list[0].temp.min);
+			var low = fTemp;
 
-		});		
-		$('#fButton').click(function(){
-			function convertC(temperature){
-				return (temperature * (9/5) - 459.67);
-			}
-			currentTemp = convertC(currentTemp);
-			$('#temp-container').html(Math.round(currentTemp + '<span class="deg"> &deg;F </span>');
-			high = convertF(high);
-			$('#high').html(Math.round(high) + '<span class="deg"> &deg;C </span>');
-			low = convertF(low);
-			$('#low').html(Math.round(low) + '<span class="deg"> &deg;C </span>');
-		});
+			$('#high').html(' '+high);
+			$('#low').html(' '+low);
+		}
 		function getWeather(data){
 			var icon = data.weather[0].id
 					$('#icon').html("<i class='wi wi-owm-" + icon + "'></i>");					
@@ -83,8 +58,9 @@ $(document).ready(function(){
 					new Date(data.sys.sunrise * 1000);
 					$('#time').html(Date);
 	//Temperature	
-					currentTemp = data.main.temp;								
-					$('#temp-container').html(Math.round(initTemp(currentTemp) + '<span class="deg"> &deg;F </span>');
+					initTemp(data.main.temp);
+										
+					$('#temp-container').html(Math.round(fTemp) + '<span class="deg"> &deg;F </span>');
 					$('.innerWell').css('visibility','visible');						
 		};
 		
@@ -130,8 +106,13 @@ $(document).ready(function(){
 		}); 
 	  
 	}	
-	
-
+	//Temperature Buttons
+		$('#cButton').click(function(){
+			$('#temp-container').html(Math.round(cTemp) + '<span class="deg"> &deg;C </span>');
+		});		
+		$('#fButton').click(function(){
+			$('#temp-container').html(Math.round(fTemp) + '<span class="deg"> &deg;F </span>');
+		});
 });
   
   

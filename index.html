@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -14,11 +15,6 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons-wind.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css">
 	
-
-
-	
-	
-	
 	<link href="https://fonts.googleapis.com/css?family=Bungee|Raleway|Contrail+One" rel="stylesheet"> 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -26,11 +22,12 @@
 			  src="https://code.jquery.com/jquery-2.2.4.min.js"
 			  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
 			  crossorigin="anonymous" ></script>
-	<script type='text/javascript' src="scripts/script.js" async ></script>
+	<script type='text/javascript' src="scripts/script(branch01).js" async ]></script>
 	
 </head>
 
 <body>
+	<div id='color' class="well">
 		<header>Danny's Weather App</header>
 		<div id="subHeader">So you don't have to look out the window</div><br>
 		
@@ -42,19 +39,33 @@
 				</form>
 			</div>
 		
-		
-		<div id="location" class="info"> <!--Location here--> --</div> </div>
-		<div id="icon"><!-- icon here --></div>
-		<div class="info" id="weatherDescription"><!--description here--></div>		
-		<div class="info" id="temp-container"> <!--Temp here --> --</div>
-		<div class="info"> 
-			<p>
-				<button class="btn btn-info" id="fButton">F</button>
-				<button class="btn btn-info" id="cButton">C</button>
-			 </p>
-		 </div>
-		 <div id="time"><!--sunrise/set time--></div>
-		 
+		<div id="left" class="well innerWell">
+			<div id="location" class="info"> <!--Location here--> --</div> 
+			<div id="icon"><!-- icon here --></div>
+			<div class="info" id="weatherDescription"><!--description here--></div>		
+			<div class="info" id="temp-container"> <!--Temp here --> --</div>
+			<div class="innerWell"><div id="high">Hi</div><br><div id="low">Lo</div></div>
+			<div class="info"> 
+				<p>
+					<button class="btn btn-info" id="fButton">F</button>
+					<button class="btn btn-info" id="cButton">C</button>
+				 </p>
+			 </div>
+		</div>
+	<!-- 	<div id="right" class="well innerWell">
+			<div class="info"></div> 
+			<div id="icon"></div>
+			<div class="info" id="weatherDescription"></div>		
+			<div class="info" id="temp-container"></div>
+			<div class="info"> 
+				<p>
+					<button class="btn btn-info" id="fButton">F</button>
+					<button class="btn btn-info" id="cButton">C</button>
+				 </p>
+			 </div>
+		</div> -->
+			 <div id="time"><!--sunrise/set time--></div>
+	</div>
 		 <footer id="author">by <a href="http://dannysview.com">Danny</a></footer>
 	
 		 
