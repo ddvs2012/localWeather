@@ -10,8 +10,8 @@ $(document).ready(function(){
 			initTemp(data.list[0].temp.min);
 			var low = fTemp;
 
-			$('#high').html(' '+high);
-			$('#low').html(' '+low);
+			$('#high').html(' hi '+high+'<span class="deg"> &deg;F </span>');
+			$('#low').html(' lo '+low+'<span class="deg"> &deg;F </span>');
 		}
 		function getWeather(data){
 			var icon = data.weather[0].id
