@@ -2,12 +2,13 @@ $(document).ready(function(){
 
 		$("#searchForm").submit(function(e){
 			searchInput = $("#searchInput").val();
-			address = "api.openweathermap.org/data/2.5/weather?q="+searchInput+"&appid=0a37ba98b900f7cfeb11629c1ee0d7d5";
+			address = "http://api.openweathermap.org/data/2.5/weather?zip="+searchInput+"&appid=0a37ba98b900f7cfeb11629c1ee0d7d5";
 			
 			
 			console.log(address);
 	
 			 $.getJSON(address, function(data){
+			 	console.log('yay');
 				var icon = data.weather[0].id
 					$('#icon').html("<i class='wi wi-owm-" + icon + "'></i>");
 					
